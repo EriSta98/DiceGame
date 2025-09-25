@@ -11,16 +11,17 @@ public class Player {
     private String lastName;
 
     private int score = 0;
+    private int roundsWon = 0;
 
 
 
     //  ** GETS **
 
-    // Används inte?
+
     public String getFirstName() {
         return firstName;
     }
-    // Används inte?
+
     public String getLastName() {
         return lastName;
     }
@@ -33,7 +34,9 @@ public class Player {
         return firstName + " " + lastName;
     }
 
-
+    public int getRoundsWon() {
+        return roundsWon;
+    }
 
 
 
@@ -50,7 +53,7 @@ public class Player {
     }
 
 
-    // Används inte?
+
     public void setScore(int score) {
         this.score = score;
     }
@@ -61,7 +64,7 @@ public class Player {
         this.score += score;
     }
 
-
-
-
+    public void incrementRoundsWon(){
+        this.roundsWon++;
+    }
 }
