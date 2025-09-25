@@ -142,38 +142,6 @@ public class Game {
 
 
 
-
-
-    /*
-    public  void throwingDice(){
-        System.out.println("\nIts " + player1.getFullName() + " VS " + player2.getFullName());
-
-
-        // Här gör vi en loop så att spelet kan hantera andra svar än 1 och därmed inte kraschar.
-        int choice;
-        while(true){
-            System.out.println("Press 1 to continue and throw the dice for each player!");
-
-            //  Kollar om choice = 1, om ja, spelar vi spelet
-            if(scanner.hasNextInt()){
-                choice = scanner.nextInt();
-                // scanner.nextLine();
-
-                if(choice == 1){
-                    playRound(player1, player2);
-                    break;  // Här har vi fått ett korrekt val och kan därmed lämna loopen
-                } else{  // Skrivar man nån annan siffra än 1 hanteras det här
-                    System.out.println("You have to press 1 to continue! Try again.");
-                }
-            } else{ // Skriver man till exempel bokstäver hanteras även det
-                System.out.println("Invalid input! Please enter a number");
-
-            }
-        }
-    }
-    */
-
-
         /* Denna metoden använder roll metoden för att ge ett random värde till två fält per person.
          * Sen skriver vi ut vad tärningen landar på och plussar värdena av tärningskasten till en total.
          * */
